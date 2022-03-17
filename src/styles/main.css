@@ -1,0 +1,357 @@
+/* Global Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Skip to content style */
+.skip__content {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    background-color: #fc4f4f;
+    color: white;
+    padding: 12px;
+    z-index: 100;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    z-index: 999999;
+}
+
+.skip__content:focus {
+    top: 0;
+}
+
+/* Styling Navbar Dekstop */
+.navbar {
+    top: 0;
+    position: fixed;
+    background-color: #fc4f4f;
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 99999;
+}
+
+.nav__list {
+    width: 80%;
+    margin: 0;
+    padding: 0 2.5em;
+    text-align: right;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.nav__item {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+    line-height: 24px;
+}
+
+.nav__item a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.logo {
+    font-family: 'Pattaya', sans-serif;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18px;
+    width: 30%;
+    line-height: 24px;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    margin-left: 2.5em;
+}
+
+/* Styling Navbar Mobile */
+.mobile__menu {
+    display: flex;
+    width: 100%;
+    background-color: #fc4f4f;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    justify-content: space-between;
+    padding: 14px 0 0 8px;
+}
+
+.navbar__mobile {
+    display: flex;
+    width: 100%;
+    background-color: #fc4f4f;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar__mobile a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.list__mobile {
+    width: 60%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.item__mobile {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: right;
+    line-height: 24px;
+    color: white;
+}
+
+.item__mobile a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.icon__menu a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+/* Styling jumbotron */
+.jumbotron {
+    display: flex;
+    align-items: center;
+    min-height: 390px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../public/images/heros/jumbotron.jpg');
+    height: 70vh;
+}
+
+.jumbotron__text {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 2px #fc4f4f;
+}
+
+.jumbotron p {
+    margin-top: 1em;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px #141414;
+}
+
+/* Styling Main and Content */
+main {
+    width: 100%;
+    margin: auto;
+}
+
+.content {
+    padding: 1.5em;
+}
+
+.content h2 {
+    text-align: center;
+    color: #fc4f4f;
+    padding: 0 0 1.7em 0;
+}
+
+.card__list {
+    text-align: left;
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 1.5em;
+}
+
+.card {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+.card__city {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border-radius: 6px;
+    background-color: #fc4f4f;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.card__content {
+    padding: 1em;
+}
+
+.card__title {
+    text-decoration: none;
+}
+
+.card__title a {
+    text-decoration: none;
+    color: #fc4f4f;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.card__rating {
+    font-size: 14px;
+}
+
+.card__rating__value {
+    color: #fc4f4f;
+    font-weight: bolder;
+}
+
+.card__description {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* Styling Footer */
+footer {
+    background-color: #fc4f4f;
+    padding: 0.2em;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0.7em;
+    font-size: 18px;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* Styling Mobile Responsive */
+@media screen and (max-width: 616px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile__menu {
+        top: 0;
+        position: fixed;
+        z-index: 99999;
+    }
+
+    .navbar__mobile {
+        top: 3em;
+        background-color: #fc4f4f;
+        z-index: 9;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .item__mobile {
+        display: list-item;
+        text-align: left;
+        color: #fc4f4f;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 617px) {
+    .mobile__menu {
+        display: none;
+    }
+
+    .navbar__mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+
+    .nav__list {
+        width: 70%;
+    }
+
+    .card__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
